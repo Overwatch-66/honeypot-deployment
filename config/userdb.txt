@@ -1,0 +1,15 @@
+root:123456
+admin:admin
+test:test
+user:password
+guest:guest
+raspberry:pi
+ubuntu:ubuntu
+centos:centos
+debian:debian
+oracle:oracle
+postgres:postgres
+mysql:mysql
+ftp:ftp
+nagios:nagios
+pi:raspberry
