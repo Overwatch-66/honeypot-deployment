@@ -1,5 +1,36 @@
 #!/bin/bash
 # Script d'installation automatique de Cowrie Honeypot
+
+#
+# 📋 SCRIPT: deploy-cowrie.sh
+# 📍 OBJECTIF: Automatisation complète du déploiement d'un honeypot Cowrie
+# 🎯 UTILITÉ: Capture et analyse des tentatives d'intrusion SSH/Telnet
+# ⚡ FUNCTIONNALITÉS:
+#   - Installation automatique des dépendances système
+#   - Configuration optimisée pour la capture d'attaques
+#   - Mise en place d'un service systemd pour la persistance
+#   - Configuration de logging avancée pour l'analyse forensique
+#
+# 💡 USAGE: 
+#   chmod +x deploy-cowrie.sh
+#   sudo ./deploy-cowrie.sh
+#
+# 🔐 SÉCURITÉ:
+#   - Exécution sous utilisateur dédié (principe de moindre privilège)
+#   - Environnement Python isolé (virtualenv)
+#   - Configuration sécurisée par défaut
+#   - Journalisation complète des activités
+#
+# 📊 OUTPUT:
+#   - Logs détaillés dans /var/log/cowrie/
+#   - Données structurées pour analyse Threat Intelligence
+#   - Profilage automatique des attaquants
+#
+# 🚀 INTÉGRATION:
+#   - Compatible avec les environnements AWS/Cloud
+#   - Peut être intégré à des pipelines SIEM
+#   - Supporte l'export vers des systèmes d'analyse
+
 # Usage: sudo ./deploy-cowrie.sh
 
 set -e
