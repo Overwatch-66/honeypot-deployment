@@ -19,8 +19,8 @@ flowchart LR
     D --> F[Système de fichiers simulé]
 ```
 ### Description des composants
-***Attaquant***: L'entité malveillante qui initie les connexions SSH/Telnet.  
-***Internet***: Le réseau public par lequel transitent les connexions.  
+***- Attaquant***: L'entité malveillante qui initie les connexions SSH/Telnet.  
+***- Internet***: Le réseau public par lequel transitent les connexions.  
 ***Firewall***: Le dispositif qui autorise les connexions sur le port 2222 vers le honeypot.  
 ***Cowrie Honeypot***: Le logiciel qui simule un serveur SSH/Telnet et capture les activités.  
 ***Logs JSON/Text***: Les fichiers de logs générés par Cowrie pour analyse.  
