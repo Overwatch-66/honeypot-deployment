@@ -10,10 +10,16 @@ Ce document décrit l'architecture technique du déploiement de notre honeypot C
 3. **Scripts d'analyse** - Traitement et analyse des données
 
 ## Diagramme d'architecture
-[Internet] -> [Firewall (Port 2222)] -> [Cowrie Honeypot] -> [Logs JSON/Text]
-| | 
-| |
-+--> [Attaquant] +--> [Système de fichiers simulé]
+flowchart TB
+    Internet[Internet] --> Firewall[Firewall<br>Port 2222]
+    Firewall --> Cowrie[Cowrie Honeypot]
+    
+    Cowrie --> Logs[Logs JSON/Text]
+    Cowrie --> FS[Système de fichiers simulé]
+    
+    Attaquant[Attaquant] -.-> Internet
+    Attaquant -.-> Cowrie
+    Attaquant -.-> FS
 
 ## Flux de données
 1. Un attaquant scanne les IPs publiques pour le port SSH
