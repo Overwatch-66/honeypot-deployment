@@ -33,7 +33,7 @@
 
 # Usage: sudo ./deploy-cowrie.sh
 
-set -e
+set -e #faire échouer le script en cas d'erreur
 
 # Variables
 COWRIE_USER="cowrie"
